@@ -1,0 +1,32 @@
+{
+  "name": "bitcoin-multisig",
+  "version": "1.0.0",
+  "description": "Bitcoin Multi signature transaction utility using combination of locally stored keys and usb ledger wallet",
+  "main": "scripts/signHandler.js",
+  "scripts": {
+    "address": "node address.js",
+    "sign": "node signer.js",
+    "generate": "node localKeyPair.js",
+    "unsigned": "node psbtRaw.js"
+  },
+  "dependencies": {
+    "@ledgerhq/hw-app-btc": "^5.16.0",
+    "@ledgerhq/hw-transport-node-hid": "^5.16.0",
+    "bitcoinjs-lib": "~5.1.7",
+    "config": "^3.3.1",
+    "regenerator-runtime": "^0.13.5"
+  },
+  "keywords": [
+    "bitcoin",
+    "multisig",
+    "multisignature",
+    "ledger",
+    "psbt",
+    "hardware wallet"
+  ],
+  "author": "Shubham Aggarwal <ag.shubham@hotmail.com> (https://github.com/kleash/)",
+  "license": "Apache 2.0",
+  "homepage": "https://github.com/kleash/multisig-usbwallet",
+  "bugs": "https://github.com/kleash/multisig-usbwallet/issues",
+  "repository": "github:kleash/multisig-usbwallet"
+}
